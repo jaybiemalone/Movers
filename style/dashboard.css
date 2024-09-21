@@ -3,7 +3,6 @@
     gap: 30px;
     flex-wrap: wrap;
     margin: 30px;
-    background-color: rgb(219 234 254);
 }
 .main-content .dashboard-content .box{
     display: grid;
@@ -136,4 +135,73 @@
 
 .main-content .dashboard-content .box .second-box .text-box p{
     color: #7E7E7E;
+}
+
+.main-content .dashboard-content .box:nth-child(4) .second-box{
+    display: grid;
+    grid-template-columns: 170px 1fr;
+}
+
+.main-content .dashboard-content .box:nth-child(4) .second-box .left-box{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.main-content .dashboard-content .box:nth-child(4) .second-box .left-box .trips-container{
+    background-color: #E1E1E1;
+    height: 130px;
+    width: 150px;
+}
+
+.main-content .dashboard-content .box:nth-child(4) .second-box .left-box .trips-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-content .dashboard-content .box:nth-child(4) .second-box .left-box .trips-container ul li{
+    width: 48px;
+    height: 26px;
+    display: block;
+    font-size: 10px;
+    margin: 5px;
+    line-height: 10px;
+}
+
+.main-content .dashboard-content .box:nth-child(4) .second-box .left-box .trips-container ul li span{
+    font-weight: bold;
+}
+
+.main-content .dashboard-content .box:nth-child(4) .second-box .left-box p {
+    font-size: 11px;
+}
+
+.main-content .dashboard-content .box:nth-child(4) .second-box .left-box b{
+    font-size: 16px;
+}
+
+.main-content .dashboard-content .box:nth-child(4) .second-box .left-box span{
+    font-size: 8px;
+    width: 47px;
+    height: 14px;
+}
+
+.main-content .dashboard-content .box:nth-child(4) .second-box .right-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content .dashboard-content .box:nth-child(4) .second-box .right-box .analysis-content ul{
+    display: flex;
+}
+
+.main-content .dashboard-content .box:nth-child(4) .second-box .right-box .analysis-content ul li{
+    list-style: none;
+    font-size: 10px;
+    padding-left: 20px;
 }

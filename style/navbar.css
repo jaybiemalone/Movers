@@ -1,7 +1,6 @@
 /*Left Sidebar*/
 
 .main-content nav{
-    width: 100vw;
     background-color: white;
     border-bottom: 1px solid rgba(73, 72, 72, 0.26);
     display: flex;
@@ -9,11 +8,12 @@
 }
 
 .main-content nav .leftbar{
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: start;
     padding-left: 10px;
+    overflow: hidden;
 }
 
 .main-content nav .leftbar i{
@@ -32,7 +32,7 @@ a{
 }
 
 .main-content nav .rightbar{
-    width: 40%;
+    width: 50%;
 }
 
 .main-content nav .leftbar span{
