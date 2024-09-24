@@ -1,0 +1,35 @@
+.main-content .Trips-Container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.main-content .Trips-Container .trip-box{
+    display: grid;
+    height: 100px;
+    width: 300px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.411);
+}
+
+.main-content .Trips-Container .trip-box:nth-child(4){
+    width: 960px;
+    height: 300PX;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.main-content .Trips-Container .trip-box:nth-child(4) .first-box{
+    box-shadow: 0px 3px 0px rgba(189, 184, 184, 0.411);
+    font-weight: 500;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.main-content .Trips-Container .trip-box:nth-child(4) .second-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

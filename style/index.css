@@ -2,6 +2,7 @@
 @import url(dashboard.css);
 @import url(sidebar.css);
 @import url(navbar.css);
+@import url(trips.css);
 *{
     padding: 0;
     margin: 0;
