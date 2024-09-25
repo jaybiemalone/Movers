@@ -44,14 +44,6 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
-.main-content .upcoming-container .upcoming-box .bottom-box .top-content ul:nth-child(1) li:nth-child(1) button{
-    color: white;
-    background-color: #0046FA;
-    border-radius: 5px;
-    outline: none;
-}
-
 .main-content .upcoming-container .upcoming-box .bottom-box .top-content ul:nth-child(2) li button{
     border: none;
     height: 25px;
@@ -61,6 +53,12 @@
     border-radius: 5px;
     outline: none;
     cursor: pointer;
+}
+
+.main-content .upcoming-container .upcoming-box .bottom-box .top-content ul li.active button{
+    background-color: #0046FA;
+    color: white;
+    font-weight: bold;
 }
 
 .main-content .upcoming-container .upcoming-box .bottom-box .top-content ul li button a{

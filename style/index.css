@@ -5,11 +5,6 @@
 @import url(trips.css);
 @import url(upcoming.css);
 @import url(triphistory.css);
-@import url(callendar-aug.css);
-@import url(callendar-sept.css);
-@import url(callendar-oct.css);
-@import url(callendar-nov.css);
-@import url(callendar-dec.css);
 *{
     padding: 0;
     margin: 0;
@@ -33,6 +28,3 @@ body{
     background-color: rgb(219 234 254);
 }
 
-a{
-    text-decoration: none;
-}
