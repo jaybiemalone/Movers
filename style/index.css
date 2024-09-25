@@ -5,6 +5,7 @@
 @import url(trips.css);
 @import url(upcoming.css);
 @import url(triphistory.css);
+@import url(crud-trips_history.css);
 *{
     padding: 0;
     margin: 0;

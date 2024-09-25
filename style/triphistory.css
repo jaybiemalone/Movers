@@ -18,4 +18,18 @@
     display: flex;
     align-items: center;
     padding-left: 20px;
+    justify-content: space-between;
+}
+
+.main-content .triphistory-container .history-box .top-box a button{
+    border: none;
+    width: 80px;
+    height: 25px;
+    border-radius: 5px;
+    margin-right: 20px;
+    background-color: #0046FA;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
 }

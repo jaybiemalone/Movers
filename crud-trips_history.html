@@ -121,10 +121,46 @@
         <div class="triphistory-container">
             <div class="history-box">
                 <div class="top-box">
-                    <h3>Trips History</h3>
-                    <a href="crud-trips_history.html"><button>Add</button></a>
+                    <h3>Add Appointment</h3>
+                    <a href="triphistory.html"><button>Back</button></a>
                 </div>
-                <div class="bottom-box"></div>
+                <div class="bottom-box">
+                    <form method="post" action="connect.php">
+                        <ul>
+                            <li><label for="">Driver</label>
+                                <input type="text" name="driver">
+                            </li>
+                            <li><label for="">Client</label>
+                                <input type="text" name="client">
+                            </li>
+                            <li><label for="">Email</label>
+                                <input type="text" name="email">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><label for="">Trip from</label>
+                                <input type="text" name="from">
+                            </li>
+                            <li>
+                                <label for="">Trip to</label>
+                                <input type="text" name="to">
+                            </li>
+                            <li><label for="">Hours</label>
+                                <input type="text" name="hours">
+                            </li>
+                            <li><label for="">Amount</label>
+                                <input type="text" name="amount">
+                            </li>
+                            <li><label for="">Tips</label>
+                                <input type="text" name="tip">
+                            </li>
+                            <li><label for="">Actions</label>
+                                <input type="text" name="status">
+                            </li>
+                        </ul>
+                        <button value="Submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
