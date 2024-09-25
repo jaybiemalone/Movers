@@ -1,0 +1,21 @@
+.main-content .triphistory-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content .triphistory-container .history-box{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    width: 1050px;
+    height: 500px;
+    background-color: white;
+}
+
+.main-content .triphistory-container .history-box .top-box{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
