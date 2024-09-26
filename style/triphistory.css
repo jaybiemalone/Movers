@@ -33,3 +33,37 @@
     cursor: pointer;
     outline: none;
 }
+
+.main-content .triphistory-container .history-box .bottom-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    position: relative;
+}
+.main-content .triphistory-container .history-box .bottom-box .table-ul{
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 12px;
+}
+
+.main-content .triphistory-container .history-box .bottom-box .table-ul .table-li{
+    padding: 10px 20px 10px 20px;
+    width: 75px;
+    height: 50px;
+    text-align: center;
+}
+
+.main-content .triphistory-container .history-box .bottom-box .table-ul:nth-child(2) {
+    top: 60px;
+}
+
+.main-content .triphistory-container .history-box .bottom-box .table-ul:nth-child(1){
+    font-weight: bold;
+    font-size: 15px;
+}

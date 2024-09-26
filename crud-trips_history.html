@@ -125,44 +125,96 @@
                     <a href="triphistory.html"><button>Back</button></a>
                 </div>
                 <div class="bottom-box">
-                    <form method="post" action="connect.php">
+                    <form id="form">
                         <ul>
                             <li><label for="">Driver</label>
-                                <input type="text" name="driver">
+                                <input id="driver" name="driver">
                             </li>
                             <li><label for="">Client</label>
-                                <input type="text" name="client">
+                                <input id="client" name="client">
                             </li>
                             <li><label for="">Email</label>
-                                <input type="text" name="email">
+                                <input id="email" type="text" name="email">
                             </li>
                         </ul>
                         <ul>
                             <li><label for="">Trip from</label>
-                                <input type="text" name="from">
+                                <input id="from" type="text" name="from">
                             </li>
-                            <li>
-                                <label for="">Trip to</label>
-                                <input type="text" name="to">
+                            <li><label for="">Trip to</label>
+                                <input id="to" type="text" name="to">
                             </li>
                             <li><label for="">Hours</label>
-                                <input type="text" name="hours">
+                                <input id="hours" type="text" name="hours">
                             </li>
                             <li><label for="">Amount</label>
-                                <input type="text" name="amount">
+                                <input id="amount" type="text" name="amount">
                             </li>
                             <li><label for="">Tips</label>
-                                <input type="text" name="tip">
+                                <input id="tip" type="text" name="tip">
                             </li>
                             <li><label for="">Actions</label>
-                                <input type="text" name="status">
+                                <input id="status" type="text" name="status">
                             </li>
                         </ul>
-                        <button value="Submit">Submit</button>
+                        <button type="submit">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        /*saluob ng form ginawa ko siyang listen out button para sa submit, para pag na click lahat ng input ma save
+        sa localstorage*/
+        const form = document.getElementById('form');
+        /*bali dito ginawa ko yung lagayan ng mga value na na-input sa form*/
+        const driver = document.getElementById('driver');
+        const client = document.getElementById('client');
+        const email = document.getElementById('email');
+        const from = document.getElementById('from');
+        const to = document.getElementById('to');
+        const hours = document.getElementById('hours');
+        const amount = document.getElementById('amount');
+        const tip = document.getElementById('tip');
+        const status = document.getElementById('status');
+
+        /*submit*/
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+
+        /*Aller funtion pag walang laman yung fill-up formm*/
+            if (!driver.value || !client.value || !email.value || !from.value || !to.value ||
+            !hours.value || !amount.value || !tip.value || !status.value) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+        
+            const driverNameValue = driver.value;
+            const clientNameValue = client.value;
+            const emailValue = email.value;
+            const fromValue = from.value;
+            const toValue = to.value;
+            const hoursValue = hours.value;
+            const amountpValue = amount.value;
+            const tipValue = tip.value;
+            const statusValue = status.value;
+            
+            /*LocalStorage dito pupunta lahat ng mga value*/
+
+            localStorage.setItem('driver-name', driverNameValue);
+            localStorage.setItem('client-name', clientNameValue);
+            localStorage.setItem('email-name', emailValue);
+            localStorage.setItem('from-name', fromValue);
+            localStorage.setItem('to-name', toValue);
+            localStorage.setItem("hours-name", hoursValue);
+            localStorage.setItem("amount-name", amountpValue);
+            localStorage.setItem("tip-name", tipValue);
+            localStorage.setItem('status-name', statusValue);
+
+            /*file location kung saan mapupunta yung mga value na nasave ko sa localstorage*/
+            window.location.href = "triphistory.html";
+        })
+    </script>
 </body>
 </html>
